@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 167, 26);
+}
+
+.calculators{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.calc {
+    border: 1px solid black;
+    height: 550px;
+    width: 275px;
+    border-radius: 25px;
+    margin-left: 60px;
+    
+}
+
+.buttons1{
+    border:1px solid ;
+    height: 40px;
+    width: 45px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px;
+    background-color: rgb(24, 23, 23);
+}
+
+
+.buttons2{
+    border:1px solid wheat;
+    height: 40px;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px;
+    background-color: wheat;
+}
+
+.result{
+    height: 120px;
+    width: 100%;
+    color: white;
+}
+
+.result p {
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+    padding-top: 70px;
+    padding-right: 10px;
+}
+
+.input1{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    border: none;
+    text-align: right;
+    color: white;
+    padding-right: 5px;
+}
+
+.input2{
+    height: 40px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: wheat;
+    border: none;
+    text-align: right;
+    color: black;
+    padding-right: 5px;
+}
+
+.input-section{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 5px;
+    column-gap: 10px;
+    justify-content: center;
+    
+}
+
+.equator{
+    grid-column: 3 / 5;
+    border:1px solid ;
+    height: 40px;
+    width: 125px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px;
+    background-color:  rgb(245, 73, 10);
+}
+
+.text1{
+    color: white;
+}
+
+.operators{
+    color: rgb(245, 73, 10);
+}
