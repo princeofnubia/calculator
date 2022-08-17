@@ -44,7 +44,7 @@ body {
     background-color: wheat;
 }
 
-.result {
+#result {
     width: 100%;
     color: white;
     font-size: 30px;
@@ -66,15 +66,14 @@ body {
     word-wrap: break-word;
 }
 
-.input2 {
+#input2 {
     height: 40px;
     margin-top: 5px;
     width: 100%;
-    background-color: wheat;
+    color: white;
+    text-align: end;
     border: none;
-    text-align: right;
-    color: black;
-    padding-right: 5px;
+    margin: 0 -1rem;
 }
 
 .input-section {

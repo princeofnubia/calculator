@@ -35,6 +35,10 @@ document.oncut((event) => {
   alert(99);
 });
 
+function percentage() {
+  alert("me");
+}
+
 function calculate(str) {
   return 1;
 }
