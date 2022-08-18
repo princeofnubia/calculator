@@ -1,9 +1,10 @@
 class Button {
   // dependency injection
   // meaning we have a display and we are calling it to display whatever params we pass to it
-  constructor(num, display) {
-    this.text = num;
+  constructor(btn, display) {
+    this.text = btn.value;
     this.display = display;
+    btn.addEventListener("click", () => this.press());
   }
 
   press() {
@@ -12,22 +13,20 @@ class Button {
 }
 
 class Num extends Button {
-  constructor() {
-    super();
-  }
-
-  press() {
-    // display sth on the screen
+  constructor(btn, display) {
+    super(btn, display);
+    console.log(this.display);
   }
 }
 
 class Clear extends Button {
-  constructor() {
-    super();
+  constructor(btn, display) {
+    super(btn, display);
   }
 
   press() {
-    // clears the screen and display sth on the screen
+    console.log("I am here");
+    this.display.display("");
   }
 }
 
@@ -50,3 +49,35 @@ class Evaluates extends Button {
     // Evaluates text and display result on the screen
   }
 }
+
+class Display {
+  constructor(screen) {
+    this.screen = screen;
+  }
+
+  display(displayItem) {
+    this.screen.innerText = displayItem;
+  }
+}
+
+class Arithmetic {
+  static calculate(string) {
+    this.str = string;
+  }
+}
+
+// Client Code
+// We are going instantiate object representing this button such that when they'
+// they respond accordingly
+
+const display = new Display(document.getElementById("input1"));
+const result = new Display(document.getElementById("input2"));
+
+const buttons1 = document.querySelectorAll(".buttons1");
+const buttons2 = document.querySelectorAll(".buttons2");
+
+const btn = document.getElementById("three");
+const clear = document.getElementById("AC");
+
+const btn3 = new Num(btn, display);
+const btnclear = new Clear(clear, display);
