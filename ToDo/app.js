@@ -8,23 +8,44 @@ class Tasks {
     }
 
     removetask() {
-        this.tasksli.splice(this.task.index, 1);
+        this.tasksli.splice(this.tasksli.length, 1);
     }
 
-    newtask(whattodo) {
+    newtask() {
         for (let i = 0; 1 < this.tasksli.length; i++) {
-            this.tasksli[i].whattodo;
+            this.tasksli[i];
+
+
         }
+
     }
 }
 
-const task = (whattodo) => {
-    let todolist= document.getElementById("tasks");
+
+
+
+let listCreator = document.getElementById('newtask').addEventListener("click", function taskcreator(){
+    let todolist = document.getElementById("tasksli");
     let createTask = document.createElement('li');
     let create = todolist.appendChild(createTask);
     let input = document.createElement('input');
-    create.appendChild('input');
+    create.appendChild(input);
+   
+})
 
+let tasks = new Tasks()
+
+tasks.createnewtask(listCreator);
+tasks.newtask();
+function taskRemover () {
+    document.getElementById("removetask").addEventListener("click",tasks.removetask());
 }
-
-documet.getElementById('click').addEventListener("click", )
+taskRemover();
+// document.getElementById('newtask').addEventListener("click", function taskcreator(){
+//     let todolist = document.getElementById("tasksli");
+//     let createTask = document.createElement('li');
+//     let create = todolist.appendChild(createTask);
+//     let input = document.createElement('input');
+//     create.appendChild(input);
+   
+// })

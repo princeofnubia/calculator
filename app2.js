@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-const result = document.querySelector(".result");
-const display = document.getElementById("input1");
-const display1 = document.querySelector(".input2");
-=======
 const display = document.getElementById("input1");
 const result = document.getElementById("input2");
->>>>>>> d95a207877fe248bd4da6431babf7289a0380bad
 const buttons1 = document.querySelectorAll(".buttons1");
 const buttons2 = document.querySelectorAll(".buttons2");
 
@@ -15,22 +9,6 @@ buttons1.forEach((value) => {
 });
 function show(e) {
   e.preventDefault();
-<<<<<<< HEAD
-  console.log(e.target.innerText);
-  let buttonText = e.target.innerText;
-  if (buttonText == "AC") {
-    display.innerText = "";
-    display1.innerText = "";
-    result.innerText = "0";
-  } 
-  if(buttonText == "DEL"){
-    display.textContent= display.textContent.substring(0, display.textContent.length - 1)
-  }
-  else {
-    display.innerText += buttonText;
-    display1.innerText += buttonText;
-  }
-=======
   let buttonText = e.target.innerText;
   if (buttonText == "AC") {
     display.innerText = "";
@@ -57,7 +35,10 @@ document.oncut((event) => {
   alert(99);
 });
 
+function percentage() {
+  alert("me");
+}
+
 function calculate(str) {
   return 1;
->>>>>>> d95a207877fe248bd4da6431babf7289a0380bad
 }

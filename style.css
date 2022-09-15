@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(243, 167, 26);
+    font-size: small;
+    font-family: "Fira Mono";
 }
 
-.calculators{
+.calculators {
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -20,11 +24,15 @@ body{
     width: 275px;
     border-radius: 25px;
     margin-left: 60px;
+<<<<<<< HEAD
     padding-top: 40px;
+=======
+
+>>>>>>> d95a207877fe248bd4da6431babf7289a0380bad
 }
 
-.buttons1{
-    border:1px solid ;
+.buttons1 {
+    border: 1px solid;
     height: 40px;
     width: 45px;
     margin-top: 10px;
@@ -34,8 +42,8 @@ body{
 }
 
 
-.buttons2{
-    border:1px solid wheat;
+.buttons2 {
+    border: 1px solid wheat;
     height: 40px;
     width: 50px;
     margin-top: 10px;
@@ -44,17 +52,26 @@ body{
     background-color: wheat;
 }
 
+<<<<<<< HEAD
 .result{
    
+=======
+#result {
+>>>>>>> d95a207877fe248bd4da6431babf7289a0380bad
     width: 100%;
     color: white;
     font-size: 30px;
     text-align: right;
     position: relative;
+<<<<<<< HEAD
     margin: 1rem 0;
+=======
+>>>>>>> d95a207877fe248bd4da6431babf7289a0380bad
     padding-right: 10px;
+    margin: 1rem 0;
 }
 
+<<<<<<< HEAD
 #input1{
     height: 2rem;
     font-size: 30px;
@@ -63,46 +80,56 @@ body{
     padding: 0rem auto;
     text-align: right;
     color: white;
+=======
+#input1 {
+    width: 90%;
+    height: 2rem;
+    text-align: right;
+    color: white;
+    font-size: 15px;
+    margin: 0rem auto;
+    padding: 0rem auto;
+>>>>>>> d95a207877fe248bd4da6431babf7289a0380bad
     overflow: hidden;
     word-wrap: break-word;
 }
 
-.input2{
+#input2 {
     height: 40px;
     margin-top: 5px;
     width: 100%;
-    background-color: wheat;
+    font-size: 30px;
+    color: white;
+    text-align: end;
     border: none;
-    text-align: right;
-    color: black;
-    padding-right: 5px;
+    margin: 0 -1rem;
 }
 
-.input-section{
+.input-section {
     padding-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 5px;
     column-gap: 10px;
     justify-content: center;
-    
+
 }
 
-.equator{
+.equator {
     grid-column: 3 / 5;
-    border:1px solid ;
+    border: 1px solid;
     height: 40px;
     width: 125px;
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px;
-    background-color:  rgb(245, 73, 10);
+    background-color: rgb(245, 73, 10);
 }
 
-.text1{
+.text1 {
     color: white;
 }
 
-.operators{
+.operators {
     color: rgb(245, 73, 10);
 }
